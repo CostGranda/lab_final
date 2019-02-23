@@ -1,4 +1,7 @@
-import RPi.GPIO as GPIO
+try:
+    import RPi.GPIO as GPIO
+except RuntimeError:
+    print("Error importando RPi.GPIO!")
 from time import sleep
 
 GPIO.setmode(GPIO.BCM)
