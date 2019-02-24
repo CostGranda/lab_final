@@ -47,84 +47,84 @@ setup_pin()
 def p_letter(display=1):
     if display == 2:
         GPIO.output([D2a,D2b,D2e,D2f, D2g], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
     else:
         GPIO.output([D1a,D1b,D1e,D1f, D1g], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
 
 
 def i_letter(display=1):
     if display == 2:
         GPIO.output([D2e, D2f], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
     else:
         GPIO.output([D1e, D1f], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
 
 def e_letter(display=1):
     if display == 2:
         GPIO.output([D2a, D2f, D2g, D2d, D2e], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
     else:
         GPIO.output([D1a, D1f, D1g, D1d, D1e], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
 
 def d_letter(display=1):
     if display==2:
         GPIO.output(display2[:6], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
     else:
         GPIO.output(display1[:6], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
 
 def r_letter(display=1):
     if display==2:
         GPIO.output([D2e, D2f, D2g], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
     else:
         GPIO.output([D1e, D1f, D1g], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
 
 def a_letter(display=1):
     if display==2:
         GPIO.output([D2a, D2b, D2c, D2e, D2f, D2g], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
     else:
         GPIO.output([D1a, D1b, D1c, D1e, D1f, D1g], 1)
-        sleep(2)
+        sleep(1)
         leds_off()  
 
 
 def s_letter(display=1):
     if display==2:
         GPIO.output([D2a, D2c, D2d, D2f, D2g], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
     else:
         GPIO.output([D1a, D1c, D1d, D1f, D1g], 1)
-        sleep(2)
+        sleep(1)
         leds_off()       
 
 
 def n_letter(display=1):
     if display==2:
         GPIO.output([D2a, D2b, D2c, D2e, D2f], 1)
-        sleep(2)
+        sleep(1)
         leds_off()
     else:
         GPIO.output([D1a, D1b, D1c, D1e, D1f], 1)
-        sleep(2)
+        sleep(1)
         leds_off()   
 
 p_letter()
