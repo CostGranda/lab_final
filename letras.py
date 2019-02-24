@@ -38,13 +38,13 @@ def setup_pin():
     GPIO.setup(display2, GPIO.OUT)
 
 def leds_off():
-    GPIO.output([display1, display2], GPIO.LOW)
-
+    GPIO.output(display1, 0)
+    GPIO.output(display2, 0)
 
 setup_pin()
-GPIO.output(display2, True)
-GPIO.output(display1, True)
-sleep(3)
+#GPIO.output(display2, True)
+#GPIO.output(display1, True)
+#sleep(3)
 
 
 
@@ -54,4 +54,5 @@ def p_letter():
     sleep(2)
     leds_off()
 
+p_letter()
 clean()
