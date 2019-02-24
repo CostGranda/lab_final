@@ -45,7 +45,7 @@ setup_pin()
 
 #PIEDRA5
 def p_letter(display=1):
-    if disaplay == 2:
+    if display == 2:
         GPIO.output([D2a,D2b,D2e,D2f, D2g], 1)
         sleep(2)
         leds_off()
@@ -127,15 +127,25 @@ def n_letter(display=1):
         sleep(2)
         leds_off()   
 
+p_letter()
 p_letter(2)
+i_letter()
 i_letter(2)
+e_letter()
 e_letter(2)
+d_letter()
 d_letter(2)
+r_letter()
 r_letter(2)
+a_letter()
 a_letter(2)
+s_letter()
 s_letter(2)
+e_letter()
 e_letter(2)
+n_letter()
 n_letter(2)
-d_letter(2)
+d_letter()
+d_letter()
 
 clean()
