@@ -54,5 +54,44 @@ def p_letter():
     sleep(2)
     leds_off()
 
+
+def i_letter():
+    GPIO.output([D1e, D1f], 1)
+    sleep(2)
+    leds_off()
+
+def e_letter():
+    GPIO.output([D1a, D1f, D1g, D1d, D1e], 1)
+    sleep(2)
+    leds_off()
+
+def d_letter():
+    GPIO.output(display1[:6], 1)
+    sleep(2)
+    leds_off()
+
+def r_letter():
+    GPIO.output([D1e, D1f, D1g], 1)
+    sleep(2)
+    leds_off()
+
+def a_letter():
+    GPIO.output([D1a, D1b, D1c, D1e, D1f, D1g], 1)
+    sleep(2)
+    leds_off()
+
+
+def s_letter():
+    GPIO.output([D1a, D1c, D1d, D1f, D1g], 1)
+    sleep(2)
+    leds_off()
+
 p_letter()
+i_letter()
+e_letter()
+d_letter()
+r_letter()
+a_letter()
+s_letter()
+
 clean()
