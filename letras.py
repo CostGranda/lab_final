@@ -48,104 +48,113 @@ def p_letter(display=1):
     if display == 2:
         GPIO.output([D2a,D2b,D2e,D2f, D2g], 1)
         sleep(1)
-        leds_off()
+
     else:
         GPIO.output([D1a,D1b,D1e,D1f, D1g], 1)
         sleep(1)
-        leds_off()
+
 
 
 def i_letter(display=1):
     if display == 2:
         GPIO.output([D2e, D2f], 1)
         sleep(1)
-        leds_off()
+
     else:
         GPIO.output([D1e, D1f], 1)
         sleep(1)
-        leds_off()
+
 
 def e_letter(display=1):
     if display == 2:
         GPIO.output([D2a, D2f, D2g, D2d, D2e], 1)
         sleep(1)
-        leds_off()
+
     else:
         GPIO.output([D1a, D1f, D1g, D1d, D1e], 1)
         sleep(1)
-        leds_off()
+
 
 def d_letter(display=1):
     if display==2:
         GPIO.output(display2[:6], 1)
         sleep(1)
-        leds_off()
+
     else:
         GPIO.output(display1[:6], 1)
         sleep(1)
-        leds_off()
+
 
 def r_letter(display=1):
     if display==2:
         GPIO.output([D2e, D2f, D2g], 1)
         sleep(1)
-        leds_off()
+
     else:
         GPIO.output([D1e, D1f, D1g], 1)
         sleep(1)
-        leds_off()
+
 
 def a_letter(display=1):
     if display==2:
         GPIO.output([D2a, D2b, D2c, D2e, D2f, D2g], 1)
         sleep(1)
-        leds_off()
+
     else:
         GPIO.output([D1a, D1b, D1c, D1e, D1f, D1g], 1)
         sleep(1)
-        leds_off()  
+  
 
 
 def s_letter(display=1):
     if display==2:
         GPIO.output([D2a, D2c, D2d, D2f, D2g], 1)
         sleep(1)
-        leds_off()
+
     else:
         GPIO.output([D1a, D1c, D1d, D1f, D1g], 1)
         sleep(1)
-        leds_off()       
+       
 
 
 def n_letter(display=1):
     if display==2:
         GPIO.output([D2a, D2b, D2c, D2e, D2f], 1)
         sleep(1)
-        leds_off()
+
     else:
         GPIO.output([D1a, D1b, D1c, D1e, D1f], 1)
         sleep(1)
-        leds_off()   
+   
 
-p_letter()
 p_letter(2)
-i_letter()
+p_letter()
+GPIO.output(display2, 0)
 i_letter(2)
-e_letter()
+i_letter()
+GPIO.output(display2, 0)
 e_letter(2)
-d_letter()
+e_letter()
+GPIO.output(display2, 0)
 d_letter(2)
-r_letter()
-r_letter(2)
-a_letter()
-a_letter(2)
-s_letter()
-s_letter(2)
-e_letter()
-e_letter(2)
-n_letter()
-n_letter(2)
 d_letter()
+GPIO.output(display2, 0)
+r_letter(2)
+r_letter()
+GPIO.output(display2, 0)
+a_letter(2)
+a_letter()
+GPIO.output(display2, 0)
+s_letter(2)
+s_letter()
+GPIO.output(display2, 0)
+e_letter(2)
+e_letter()
+GPIO.output(display2, 0)
+n_letter(2)
+n_letter()
+GPIO.output(display2, 0)
+d_letter(2)
 d_letter()
 
 clean()
