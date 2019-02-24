@@ -45,7 +45,13 @@ setup_pin()
 GPIO.output(display2, True)
 GPIO.output(display1, True)
 sleep(3)
+
+
+
+#PIEDRA5
+def p_letter():
+    GPIO.output([D1a,D1b,D1e,D1f, D1g], 1)
+    sleep(2)
+    leds_off()
+
 clean()
-
-
-
